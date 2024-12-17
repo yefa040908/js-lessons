@@ -1,75 +1,100 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Booleans</title>
+    <title>rock paper scissors</title>
   </head>
   <body>
-    <script>
-      /*
-      true
-      false
+    <p>
+      ROCK, PAPER, SCISSORS
+    </p>
+    
+    <button onclick="
+      const rnum = Math.random();
 
-      console.log(5 === '5.00');
+      let compMove = '';
 
-      if (true) {
-        console.log('hello')
-      } else {
-        console.log('else')
+      if ( rnum >= 0 && rnum < 1 / 3) {
+        compMove = 'rock';
+      } else if ( rnum >= 1/3 && rnum < 2 / 3 ) {
+        compMove = 'paper';
+      } else if ( rnum >= 2 / 3 && rnum < 1 ) {
+        compMove = 'scissors';
       }
-        
-
-        const age = 15;
-
-        if ( age >= 16 ) {
-          console.log('you can drive');
-        } else if ( age >= 14 ) {
-          console.log('almost there!')
-        } else {
-          console.log('you can not drive');
-        }
-        
-
-        console.log( true && true );
-
-        console.log( true || false );
-
-        console.log( !false );       
-  
 
 
-        if (0) {
-          console.log('truthy');
-        }
+      let result = '';
 
-        const cartQ = 6;
+      if ( compMove === 'rock' ) {
+        result = 'tie.';
+      } else if ( compMove === 'paper' ) {
+        result = 'you lose.';
+      } else if ( compMove === 'scissors' ) {
+        result = 'you win!';
+      }
+        alert( `You picked rock. Computer picked ${compMove}. ${result}` );
 
-        if (cartQ) {
-          console.log('cart has items');
-        }
+    ">rock</button>
 
-        console.log('text' / 5);
+    <button onclick="
 
-        let va;
+    const rnum = Math.random();
 
-        console.log(va);
+    let compMove = '';
 
-      
-
-      const res = 0? 'truthy' : 'falsy'
-      console.log( res )
-
-
-
-      const msg = 5 && 'hello';
-      console.log(msg);
+    if ( rnum >= 0 && rnum < 1 / 3) {
+      compMove = 'rock';
+    } else if ( rnum >= 1/3 && rnum < 2 / 3 ) {
+      compMove = 'paper';
+    } else if ( rnum >= 2 / 3 && rnum < 1 ) {
+      compMove = 'scissors';
+    }
 
 
+    let result = '';
 
-      const curr = undefined || 'USD';
-      console.log(curr);
-      */
+    if ( compMove === 'rock' ) {
+      result = ' You win!';
+    } else if ( compMove === 'paper' ) {
+      result = ' Tie.';
+    } else if ( compMove === 'scissors' ) {
+      result = 'you lose.';
+    }
+      alert( `You picked paper. Computer picked ${compMove}. ${result}` );
 
-      
+    ">paper</button>
+
+    <button onclick="
+    
+
+    const rnum = Math.random();
+
+    let compMove = '';
+
+    if ( rnum >= 0 && rnum < 1 / 3) {
+      compMove = 'rock';
+    } else if ( rnum >= 1/3 && rnum < 2 / 3 ) {
+      compMove = 'paper';
+    } else if ( rnum >= 2 / 3 && rnum < 1 ) {
+      compMove = 'scissors';
+    }
+
+
+    let result = '';
+
+    if ( compMove === 'rock' ) {
+      result = ' You lose.';
+    } else if ( compMove === 'paper' ) {
+      result = ' You win!';
+    } else if ( compMove === 'scissors' ) {
+      result = 'Tie.';
+    }
+      alert( `You picked scissors. Computer picked ${compMove}. ${result}` );
+
+    ">scissors</button>
+
+
+    <script>
+
     </script>
   </body>
 
